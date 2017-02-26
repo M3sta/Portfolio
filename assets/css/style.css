@@ -1,1 +1,33 @@
-/*Meh...*/
+/*Fonts used in the theme*/
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&subset=latin-ext');
+
+
+:root{
+--motive: #faf5f5;
+--font_color: #675b78;
+}
+
+
+/*Menu styles*/
+.menu-content{
+font-size: 20px;
+font-family: 'Archivo Black', sans-serif;
+background-color: var(--motive);
+padding: 30px 40px 50px;
+}
+
+.main-menu, .navbar-logo{
+display: inline-block;
+}
+
+.main-menu li{
+list-style: none; 
+display: inline;
+}
+
+.main-menu li a{
+color: var(--font_color);
+padding: 0 40px;
+}
+
+/*End of menu styles*/
