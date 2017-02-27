@@ -2,9 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black&subset=latin-ext');
 
 
+/*Cleaning*/
+ul, menu, dir, ol {
+margin: 0px;
+padding: 0px; 
+}
+
 :root{
---motive: #faf5f5;
---font_color: #675b78;
+--main_color: #675b78;
+--secondary_color:#84bcb0;
 }
 
 
@@ -12,12 +18,22 @@
 .menu-content{
 font-size: 20px;
 font-family: 'Archivo Black', sans-serif;
-background-color: var(--motive);
-padding: 30px 40px 50px;
+background-color: #faf5f5;
+/*---*/
+display:block;
+height:100px;
 }
 
-.main-menu, .navbar-logo{
-display: inline-block;
+.navbar-logo{
+/*display: inline-block;*/
+float: left;
+padding: 18px 40px; 
+}
+
+.main-menu{
+/*display: inline-block;*/
+float: right;
+padding: 30px 40px 50px; 
 }
 
 .main-menu li{
@@ -26,8 +42,20 @@ display: inline;
 }
 
 .main-menu li a{
-color: var(--font_color);
-padding: 0 40px;
+color: var(--main_color);
+margin: 0 40px;
+text-decoration: none;
+position: relative;
 }
+
+.main-menu li a:hover:before {
+    position:absolute;
+    content: "";
+    left:0;
+    top:50%;
+    width:100%;
+    border-top:3px solid #d47e7e;
+}
+
 
 /*End of menu styles*/
