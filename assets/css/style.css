@@ -2,10 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black&subset=latin-ext');
 
 
-/*Cleaning*/
+/*----------------------------------*\
+    Cleaning style
+\*----------------------------------*/
+
 ul, menu, dir, ol {
-margin: 0px;
-padding: 0px; 
+  margin: 0px;
+  padding: 0px; 
 }
 
 :root {
@@ -13,7 +16,10 @@ padding: 0px;
 --secondary_color:#84bcb0;
 }
 
-/*Menu styles*/
+/*----------------------------------*\
+    Main menu
+\*----------------------------------*/
+
 .main-menu {
   font-size: 20px;
   font-family: 'Archivo Black', sans-serif;
@@ -22,17 +28,20 @@ padding: 0px;
   background-color: #faf5f5;
 }
 
-.navbar-logo {
+
+.navbar-logo__img {
   float: left;
   padding: 18px 25px; 
 }
 
-.main-menu .menu-item {
+
+.main-menu__content .main-menu__item {
   list-style: none; 
   display: inline-block;
+  padding: 30px 35px 40px;
 }
 
-.main-menu .menu-link {
+.main-menu__content .main-menu__link {
   color: var(--main_color);
   margin: 0 40px;
   text-decoration: none;
@@ -40,11 +49,7 @@ padding: 0px;
   float: right;
 }
 
-.main-menu .menu-list .menu-item {
-  padding: 30px 35px 40px;
-}
-
-.main-menu .menu-link:hover:before {
+.main-menu__content .main-menu-link:hover:before {
   position:absolute;
   content: "";
   left:0;
@@ -55,15 +60,15 @@ padding: 0px;
 
 
 .menu-navbar__button {
-    position: relative;
-    float: right;
-    padding: 10px;
-    margin: 30px;
-    background-color: var(--main_color);
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    }
+  position: relative;
+  float: right;
+  padding: 10px;
+  margin: 30px;
+  background-color: var(--main_color);
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
 
 .menu-navbar__button .icon-bar {
   background-color: var(--secondary_color); 
@@ -77,21 +82,22 @@ padding: 0px;
   margin-top: 4px;
 }
 
+
 .navbar-collapse{
   float: right;
 }
 
 @media (min-width: 768px) {
 .menu-navbar__button {
-    display: none;
+  display: none;
   }
 }
 
 @media (max-width: 767px) {
-.menu-list {
-   text-align: center;
-  }
-.menu-content{
-  border-top: 2px solid var(--main_color);
+.main-menu__list {
+  text-align: center;
 }
+.main-menu__content{
+  border-top: 2px solid var(--main_color);
+  }
 }
