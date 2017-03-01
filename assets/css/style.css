@@ -34,28 +34,31 @@ ul, menu, dir, ol {
   padding: 18px 25px; 
 }
 
-
-.main-menu__content .main-menu__item {
+.main-menu__item {
   list-style: none; 
   display: inline-block;
-  padding: 30px 35px 40px;
+  margin: 30px 0;
 }
 
-.main-menu__content .main-menu__link {
+.main-menu__item + .main-menu__item {
+  margin-left: 35px;
+}
+
+.main-menu__link {
   color: var(--main_color);
-  margin: 0 40px;
   text-decoration: none;
   position: relative;
-  float: right;
+  z-index: 1;
 }
 
-.main-menu__content .main-menu__link:hover:before {
+.main-menu__link:hover:before {
   position:absolute;
   content: "";
   left:0;
   top:50%;
   width:100%;
   border-top:3px solid #d47e7e;
+  z-index: -1;
 }
 
 
@@ -94,10 +97,19 @@ ul, menu, dir, ol {
 }
 
 @media (max-width: 767px) {
-.main-menu__list {
-  text-align: center;
-}
-.main-menu__content{
-  border-top: 2px solid var(--main_color);
+  .main-menu {
+    font-size: 16px;
+  }
+  .main-menu__list {
+    text-align: center;
+  }
+  .main-menu__item {
+    margin: 20px 0;
+  }
+  .main-menu__content{
+    border-top: 2px solid var(--main_color);
+  }
+  .navbar-collapse {
+    float: none;
   }
 }
