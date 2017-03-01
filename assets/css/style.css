@@ -49,7 +49,7 @@ ul, menu, dir, ol {
   float: right;
 }
 
-.main-menu__content .main-menu-link:hover:before {
+.main-menu__content .main-menu__link:hover:before {
   position:absolute;
   content: "";
   left:0;
