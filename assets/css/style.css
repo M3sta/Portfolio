@@ -12,7 +12,7 @@ ul, menu, dir, ol {
 }
 
 :root {
---main_color: #675b78;
+--main_color:     #675b78;
 --secondary_color:#84bcb0;
 }
 
@@ -58,17 +58,13 @@ main-menu__list{
   float: left;
 }
 
-<<<<<<< HEAD
 .main-menu__link:hover:before {
-=======
-.main-menu__content .main-menu__link:hover:before {
->>>>>>> 2270f71ed28591169fd8961262ef8aaeb56bfb25
-  position:absolute;
+  position: absolute;
   content: "";
-  left:0;
-  top:50%;
-  width:100%;
-  border-top:3px solid #d47e7e;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  border-top: 3px solid #d47e7e;
   z-index: -1;
 }
 
@@ -108,29 +104,25 @@ main-menu__list{
 }
 
 @media (max-width: 767px) {
-.main-menu{
-  font-size: 16px;
-}
-
-.main-menu__list {
-  text-align: center;
-}
-
-.main-menu__content {
-  border-top: 2px solid var(--main_color);
-  }
-<<<<<<< HEAD
-
-.navbar-collapse {
-  float: none;
+  .main-menu{
+    font-size: 16px;
   }
 
-.main-menu__item {
-  display: inline-block;
-  float: none;
+  .main-menu__list {
+    text-align: center;
+  }
+
+  .main-menu__content {
+    border-top: 2px solid var(--main_color);
+  }
+
+  .navbar-collapse {
+    float: none;
+  }
+
+  .main-menu__item {
+    display: inline-block;
+    float: none;
   }
   
 }
-=======
-}
->>>>>>> 2270f71ed28591169fd8961262ef8aaeb56bfb25
