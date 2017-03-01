@@ -58,7 +58,11 @@ main-menu__list{
   float: left;
 }
 
+<<<<<<< HEAD
 .main-menu__link:hover:before {
+=======
+.main-menu__content .main-menu__link:hover:before {
+>>>>>>> 2270f71ed28591169fd8961262ef8aaeb56bfb25
   position:absolute;
   content: "";
   left:0;
@@ -115,6 +119,7 @@ main-menu__list{
 .main-menu__content {
   border-top: 2px solid var(--main_color);
   }
+<<<<<<< HEAD
 
 .navbar-collapse {
   float: none;
@@ -126,3 +131,6 @@ main-menu__list{
   }
   
 }
+=======
+}
+>>>>>>> 2270f71ed28591169fd8961262ef8aaeb56bfb25
