@@ -54,7 +54,7 @@ ul, menu, dir, ol {
   padding-right: 5px;
 }
 
-main-menu__list{
+.main-menu__list{
   float: left;
 }
 
