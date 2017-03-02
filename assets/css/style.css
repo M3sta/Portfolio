@@ -105,6 +105,10 @@ ul, menu, dir, ol {
 
 @media (max-width: 767px) {
 
+  .menu-navbar__button {
+    float: left;
+  }
+
   .main-menu__list {
     text-align: center;
   }
