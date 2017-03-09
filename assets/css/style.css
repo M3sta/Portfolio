@@ -1,5 +1,6 @@
 /*Fonts used in the theme*/
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Eczar');
 
 
 /*----------------------------------*\
@@ -14,6 +15,7 @@ ul, menu, dir, ol {
 :root {
 --main_color:     #675b78;
 --secondary_color:#84bcb0;
+--base_color:     #faf5f5;
 }
 
 /*----------------------------------*\
@@ -23,9 +25,9 @@ ul, menu, dir, ol {
 .main-menu {
   font-size: 20px;
   font-family: 'Archivo Black', sans-serif;
-  display:block;
-  min-height:100px;
-  background-color: #faf5f5;
+  display: block;
+  min-height: 100px;
+  background-color: var(--base_color);
 }
 
 
@@ -146,6 +148,30 @@ main-menu__list{
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
-    background-repeat: repeat-y;
+    background-repeat: repeat;
     background-color: var(--main_color);
+}
+
+.parallax-section__header {
+  font-family: 'Eczar', serif;
+  font-size: 100px;
+  color: var(--base_color);
+}
+
+.parallax-section__header span {
+  color: #5ddbdb;
+}
+
+@media (max-width: 767px) {
+  .parallax-section__header {
+    font-size: 70px;
+  }
+}
+
+.parallax-section__info {
+  font-family: 'Lato', serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--base_color);
+  padding-top: 20px;
 }
