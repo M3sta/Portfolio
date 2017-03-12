@@ -21,13 +21,25 @@ ul, menu, dir, ol {
 /*----------------------------------*\
     Main menu
 \*----------------------------------*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+
+
 
 .main-menu {
   font-size: 20px;
   font-family: 'Archivo Black', sans-serif;
   display: block;
   min-height: 100px;
+  width: 100%;
   background-color: var(--base_color);
+  position: fixed;
+  z-index: 99;
 }
 
 
@@ -141,21 +153,29 @@ main-menu__list{
 
 
 .parallax-section {
-    /* The image used */
-     background-image: url("/assets/imgs/parallax_background.png");
-    /* Full height */
-    height: 100%; 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    background-color: var(--main_color);
+  background-image: url("/assets/imgs/parallax_background.png");
+  height:  100%; 
+  width:   100%;
+  margin:  0px;
+  padding: 0px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-color: var(--main_color);
 }
 
-.parallax-section__header {
+.parallax-section__header{
+  display: inline-block;
+  text-align: center;
+  padding-top: 250px;
+}
+
+.parallax-section__header-text{
   font-family: 'Eczar', serif;
-  font-size: 100px;
+  font-size: 95px;
   color: var(--base_color);
+  margin-bottom: 100px;
+  text-align: left;
 }
 
 .parallax-section__header span {
@@ -163,15 +183,45 @@ main-menu__list{
 }
 
 @media (max-width: 767px) {
-  .parallax-section__header {
+  .parallax-section__header-text {
     font-size: 70px;
+    text-align: center;
   }
 }
 
 .parallax-section__info {
   font-family: 'Lato', serif;
-  font-size: 18px;
-  line-height: 26px;
   color: var(--base_color);
   padding-top: 20px;
+  font-size: 18px;
+  line-height: 26px;
 }
+
+
+.scroll-down {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom-color: red;
+	position: relative;
+	top: -50px;
+}
+.scroll-down:after {
+	content: '';
+	position: absolute;
+	left: -50px;
+	top: 50px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top-color: red;
+}
+
+/*
+.parallax-section__content{
+  position: absolute;
+  bottom: 42%;
+  text-align: center;
+  width: 100%;
+  top: 30%;
+}*/
