@@ -6,10 +6,15 @@
 /*----------------------------------*\
     Cleaning style
 \*----------------------------------*/
+body, html {
+    margin:  0;
+    padding: 0;
+    height: 100%;
+}
 
 ul, menu, dir, ol {
-  margin: 0px;
-  padding: 0px; 
+  margin:  0;
+  padding: 0; 
 }
 
 :root {
@@ -21,15 +26,6 @@ ul, menu, dir, ol {
 /*----------------------------------*\
     Main menu
 \*----------------------------------*/
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-
-
-
 
 .main-menu {
   font-size: 20px;
@@ -56,7 +52,7 @@ body, html {
 .main-menu__item {
   list-style: none; 
   float: left;
-  margin: 30px 0px;
+  margin: 30px 0;
 }
 
 .main-menu__item + .main-menu__item{
@@ -149,15 +145,17 @@ main-menu__list{
   }
 }
 
-
+/*----------------------------------*\
+    Parallax style
+\*----------------------------------*/
 
 
 .parallax-section {
   background-image: url("/assets/imgs/parallax_background.png");
   height:  100%; 
   width:   100%;
-  margin:  0px;
-  padding: 0px;
+  margin:  0;
+  padding: 0;
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
@@ -167,7 +165,8 @@ main-menu__list{
 .parallax-section__header{
   display: inline-block;
   text-align: center;
-  padding-top: 250px;
+  padding-top:    250px;
+  padding-bottom: 50px;
 }
 
 .parallax-section__header-text{
@@ -178,7 +177,7 @@ main-menu__list{
   text-align: left;
 }
 
-.parallax-section__header span {
+.span {
   color: #5ddbdb;
 }
 
@@ -197,12 +196,32 @@ main-menu__list{
   line-height: 26px;
 }
 
+.scroll-down{
+width:  127px;
+height: 127px;
+transform: rotate(45deg);
+background-color: #d47e7e;
+border: 4px solid #f4e1e1;
+position: relative;
+margin: 0 auto;
+}
 
-.scroll-down {
+.scroll-down:after{
+content:'';
+width:  127px;
+height: 127px;
+transform: rotate(0deg);
+background-color: #ffffff;
+border: 4px solid var(--main_color);
+position: absolute;
+top: 50px;
+}
+
+/*.scroll-down {
 	width: 0;
 	height: 0;
 	border: 50px solid transparent;
-	border-bottom-color: red;
+	border-bottom-color: #d47e7e;
 	position: relative;
 	top: -50px;
 }
@@ -214,8 +233,17 @@ main-menu__list{
 	width: 0;
 	height: 0;
 	border: 50px solid transparent;
-	border-top-color: red;
-}
+	border-top-color: #d47e7e;
+}*/
+
+
+/*#borderimg1 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(border.png) 30 round;
+    -o-border-image: url(border.png) 30 round;
+    border-image: url(border.png) 30 round;
+}*/
 
 /*
 .parallax-section__content{
