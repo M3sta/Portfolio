@@ -40,8 +40,8 @@ ul, menu, dir, ol {
 
 
 .navbar-logo__img {
-  float: left;
-  padding: 18px 25px; 
+  padding: 18px 0;
+  width: 67px;
 }
 
 .navbar-logo__img img {
@@ -68,7 +68,7 @@ ul, menu, dir, ol {
   padding-right: 5px;
 }
 
-main-menu__list{
+.main-menu__list{
   float: left;
 }
 
@@ -151,11 +151,11 @@ main-menu__list{
 
 
 .parallax-section {
-  background-image: url("./assets/imgs/parallax_background.png");
-  height:  100%; 
+  background-image: url("/assets/imgs/parallax_background.png");
+  /*height:  100%; */
   width:   100%;
   margin:  0;
-  padding: 0;
+  padding: 250px 0 0;
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
@@ -163,10 +163,9 @@ main-menu__list{
 }
 
 .parallax-section__header{
-  display: inline-block;
   text-align: center;
-  padding-top:    250px;
-  padding-bottom: 50px;
+  /*padding-top:    250px;
+  padding-bottom: 50px;*/
 }
 
 .parallax-section__header-text{
@@ -175,9 +174,14 @@ main-menu__list{
   color: var(--base_color);
   margin-bottom: 100px;
   text-align: left;
+  display: inline-block;
 }
 
-.span {
+.parallax-section__header-text em {
+  font-style: normal;
+}
+
+.color-primary {
   color: #5ddbdb;
 }
 
